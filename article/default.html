@@ -1,0 +1,13 @@
+{% capture content %}
+  <article class="main__content full-post">
+    <h1 class="full-post__title">{{ title }}</h1>
+    {{ body }}
+    <div class="social">
+      <div class="social__button">
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+      </div>
+    </div>
+  </article>
+{% endcapture %}
+
+{% include "layouts/default" %}

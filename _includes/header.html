@@ -1,0 +1,37 @@
+<!doctype html>
+{% capture css %}/assets/css{% endcapture %}
+{% capture js %}/assets/js{% endcapture %}
+{% capture img %}/assets/img{% endcapture %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.meta.description }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="{{ css }}/prism.css" rel="stylesheet">
+    <link href="{{ css }}/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <script type="text/javascript" src="//use.typekit.net/qpw2pnj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="{{ js }}/vendor/prism.js"></script>
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  </head>
+  <body class="clear">
+    <script>var myDataRef = new Firebase('https://uk6jqst9aj5.firebaseio-demo.com/');</script>
+    <header class="header" role="banner">
+      <nav class="nav" role="navigation">
+        <ul>
+          {% for page in site.pages %}
+            <li>
+              <a href="{{ page.url }}">
+                {{ page.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>

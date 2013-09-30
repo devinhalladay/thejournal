@@ -1,0 +1,25 @@
+{% capture content %}
+<div class="main__content">
+  <form class="entry-submission big-form" id="editUser" data-validate="parsley" method="POST">
+
+    <label for="nameInput">Your name*</label>
+    <input type="text" id="nameInput" name="name" data-required="true">
+
+    <label for="name">Your email address*</label>
+    <input type="text" id="emailInput" name="email" data-required="true">
+
+    <label for="url">Website/blog URL</label>
+    <input type="text" id="urlInput" name="url">
+
+    <label for="bio">A brief bio</label>
+    <textarea id="bioInput" name="bio"></textarea>
+
+    <input type="submit" id="submit" class="big btn" value="Save your profile">
+
+
+
+  </form>
+</div>
+{% endcapture %}
+
+{% include "layouts/default" %}

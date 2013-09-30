@@ -1,0 +1,43 @@
+/**
+ * Text Selection
+ */
+::selection {
+  background:#333;
+  color:#fff;
+  text-shadow:none;
+}
+::-moz-selection {
+  background:#333;
+  color:#fff;
+  text-shadow:none;
+}
+::-webkit-selection {
+  background:#333;
+  color:#fff;
+  text-shadow:none;
+}
+
+/**
+ * Vertical alignment
+ */
+.aligner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+.aligner-item {
+  max-width: 50%;
+  line-height: 0;
+  margin-top: 4px;
+}

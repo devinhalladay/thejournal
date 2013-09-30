@@ -1,0 +1,58 @@
+.sidebar-profile-block {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  top: -1px;
+}
+
+.mini-avatar {
+  height: 32px;
+  float: left;
+}
+
+.profile-block-right {
+  float: left;
+  line-height: 1;
+}
+
+.profile-block-user {
+  font-family: $sans;
+  float: left;
+  border-bottom: 0;
+  font-weight: 700;
+  padding: .5em 0 .5em .6em;
+}
+
+.logout-link {
+  background-image: url("../img/logout.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-left: 0;
+  padding-left: .8em;
+  padding-right: .8em;
+}
+
+.btn {
+  font-family: $sans;
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 0.8em;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+
+  &.light {
+    background-color: transparent;
+    color: #1a1a1a;
+  }
+}
+
+.hide-text {
+display: none;
+}

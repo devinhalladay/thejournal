@@ -1,0 +1,17 @@
+{% raw %}
+<script type="text/x-template" data-hull-template="identity/identity">
+{{#if loggedIn}}
+  <div class="sidebar-profile-block">
+    <a href="" class="mini-avatar-link"><img src="{{me.picture}}" class="mini-avatar" alt="{{me.name}}"></a>
+    <div class="profile-block-right">
+      <a href="" class="profile-block-user">{{me.name}}</a>
+    </div>
+    <a data-hull-action="logout" class="btn light logout-link">
+      <span class="hide-text">Log out</span>&nbsp;
+    </a>
+  </div>
+{{else}}
+<a data-hull-action="login" data-hull-provider="twitter" class="aligner sidebar-sign-in twitter-icon chunky-link"><i class="icon-twitter aligner-item"></i>&nbsp;&nbsp;<span class="aligner-item">Log in with Twitter</span></a>
+{{/if}}
+</script>
+{% endraw %}

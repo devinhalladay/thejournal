@@ -1,0 +1,67 @@
+label, input, textarea, button, select, option {
+cursor: pointer;
+outline: none;
+}
+.user__page {
+  width: 50%;
+  margin: auto;
+.btn {
+display: inline-block;
+background-color: #1a1a1a;
+color: #fff;
+text-decoration: none;
+padding: .5em .6em;
+border: 3px #1a1a1a solid;
+font-weight: 700;
+}
+}
+
+.big-form input {
+padding: .6em;
+font-size: 1em;
+line-height: 1.04167;
+width: 100%;
+max-width: 100%;
+border-bottom: 5px #1a1a1a solid;
+margin-bottom: 25px;
+background-position: 110% center;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+input {
+border: 0;
+background-color: #ebebeb;
+border-bottom: 3px #1a1a1a solid;
+}
+fieldset {
+  border: none;
+}
+label {
+  display:block;
+}
+
+.big-form textarea {
+padding: .6em;
+font-size: 1em;
+line-height: 1.04167;
+line-height: 1.3;
+border-bottom: 5px #1a1a1a solid;
+width: 100%;
+max-width: 100%;
+height: 5.5em;
+margin-bottom: 25px;
+}
+textarea {
+border: 0;
+background-color: #ebebeb;
+border-bottom: 3px #1a1a1a solid;
+}
+
+.parsley-error + ul {
+  background-color: #db3b3b;
+  color: #fff;
+  padding: .5em .6em;
+  display: block;
+  margin-bottom: 25px;
+}

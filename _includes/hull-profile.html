@@ -1,0 +1,20 @@
+{% raw %}
+<script>
+      Hull.widget('wrapper', {
+        // Specify template.
+        templates: ['intro'],
+
+        // Re-render the widget each time the user changes.
+        refreshEvents: ['model.hull.me.change']
+      });
+    </script>
+
+<script type="text/x-template" data-hull-template="wrapper/intro">
+      {{#if loggedIn}}
+        <div data-hull-widget="registration@hull" data-hull-editable="true"></div>
+      {{else}}
+        <h4>Hello visitor</h4>
+        <div data-hull-widget="login_button@hull"></div>
+      {{/if}}
+    </script>
+{% endraw %}

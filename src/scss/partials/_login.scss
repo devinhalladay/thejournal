@@ -1,0 +1,19 @@
+.chunky-link {
+font-weight: 700;
+border-bottom: 0;
+font-family: $sans;
+}
+a.sidebar-sign-in {
+  &:hover {
+    span, i {
+      opacity: .8;
+    }
+  }
+}
+.twitter-icon {
+border-bottom: 0;
+.icon-twitter {
+  font-size: 24px;
+  color: #39464e;
+}
+}
